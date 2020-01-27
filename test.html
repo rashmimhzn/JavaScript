@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<head>
+  Functions
+</head>
+<script>
+
+'use strict';
+/*
+let year = prompt('In which year was ECMAScript-2015 specification published?', '');
+if (year == 2015) {
+  alert( "That's correct!" );
+  alert( "You're so smart!" );
+}
+
+
+let year =prompt("Whats your age?",'');
+
+if(year > 25){
+  alert('True');
+}
+else if(year < 25){
+  alert('Its False');
+}
+else{
+  alert('Exactly!');
+}
+
+let age = prompt('age?', 18);
+
+let message = (age < 3) ? 'Hi, baby!' :
+  (age < 18) ? 'Hello!' :
+  (age < 100) ? 'Greetings!' :
+  'What an unusual age!';
+
+alert( message );
+
+
+let javaScriptName = prompt('What is the “official” name of JavaScript?','');
+
+if(javaScriptName == 'ECMAScript'){
+  alert('Right');
+}
+else{
+  alert('You dont know? “ECMAScript”!');
+}
+
+
+let value = prompt('Get a number');
+
+if (value > 0){
+  alert('1');
+}
+else if (value < 0){
+  alert('-1');
+}
+else {
+  alert('0');
+}
+
+let result = (a + b < 4)? 'Below':'Over';
+
+
+let message;
+
+if (login == 'Employee') {
+  message = 'Hello';
+} else if (login == 'Director') {
+  message = 'Greetings';
+} else if (login == '') {
+  message = 'No login';
+} else {
+  message = '';
+}
+
+let message =(login == Employee) ? 'Hello':
+(login =='Director') ? 'Greetings' :
+ (login == '') ? 'No Logins':
+ '';
+
+
+if (1 || 0) { // works just like if( true || false )
+  alert( 'truthy!' );
+}
+
+
+
+let hour = 12;
+let isWeekend = true;
+
+if (hour < 10 || hour > 18 || isWeekend) {
+  alert( 'The office is closed.' ); // it is the weekend
+}
+
+let currentUser = null;
+let defaultUser = 'John';
+
+let name = currentUser || defaultUser || "unamed";
+
+alert(name);
+
+
+result = a&&b;
+
+
+let hour = 12;
+let minute = 30;
+
+if (hour == 12 && minute == 30){
+  alert('The time is 12:30');
+}
+
+
+
+alert( null || 2 || undefined );
+alert( alert(1) && alert(2) );
+
+if (!(age >= 14 && age <= 90)){
+  alert(age);
+}
+
+if (null || -1 && 1) alert( 'third' );
+
+
+
+ Login--
+let userName = prompt("Who's there?",'');
+
+if(userName =='Admin'){
+  let pass = prompt('pwd','');
+    if (pass =='TheMaster'){
+      alert('Welcome!');
+    }else if(pass == '' || pass == null){
+      alert('Cancelled');
+    }else{
+      alert('Wrong password');
+    }
+}else if(userName =='' || userName == null){
+  alert("cancelled");
+}else{
+  alert("I don't know you");}
+
+
+let i = 3;
+while (i) alert(i--);
+
+
+let i =0;
+do{
+  alert(i);
+  i++;
+}while (i <3);
+
+
+
+let i = 0;
+for(; i<3;){
+alert(i++);
+}
+
+
+for (let i = 0; i < 10; i++) {
+
+if (i % 2) {
+  alert( i );
+}
+}
+
+
+outer: for (let i = 0; i < 3; i++) {
+
+for (let j = 0; j < 3; j++) {
+
+  let input = prompt(`Value at coords (${i},${j})`, '');
+
+  // if an empty string or canceled, then break out of both loops
+  if (!input) break outer; // (*)
+
+  // do something with the value...
+}
+}
+alert('Done!');
+
+
+let i = 3;
+
+while (i=3) {
+  alert( i-- );
+}
+
+
+
+let i = 0;
+while (++i < 5) alert( i );
+
+
+let i = 0;
+while (i++ < 5) alert( i );
+
+for(let i =2; i<= 10; i++){
+  if(i % 2 == 0){
+  alert('i');
+  }
+} 
+
+
+for (let i = 0; i < 3; i++) {
+  alert( `number ${i}!` );
+}
+
+
+let i =0;
+while(i<3){
+  alert( `number ${i}!` );
+  i++;
+}
+
+let num;
+do{
+  num = promt("Enter a number greater than 100",0);
+}while(num<=100 && num);
+
+let n = 10;
+
+nextPrime:
+for (let i = 2; i <= n; i++) { // for each i...
+
+  for (let j = 2; j < i; j++) { // look for a divisor..
+    if (i % j == 0) continue nextPrime; // not a prime, go next i
+  }
+
+  alert( i ); // a prime
+}
+
+
+let a = 2 + 2;
+
+switch (a) {
+  case 3:
+    alert( 'Too small' );
+    break;
+  case 4:
+    alert( 'Exactly!' );
+    break;
+  case 5:
+    alert( 'Too large' );
+    break;
+  default:
+    alert( "I don't know such values" );
+}
+
+let a = "1";
+let b = 0;
+
+switch (+a) {
+  case b + 1:
+    alert("this runs, because +a is 1, exactly equals b+1");
+    break;
+
+  default:
+    alert("this doesn't run");
+}
+
+let a = 2 + 2;
+
+switch (a) {
+  case 4:
+    alert('Right!');
+    break;
+
+  case 3: // (*) grouped two cases
+  case 5:
+    alert('Wrong!');
+    alert("Why don't you take a math class?");
+    break;
+
+  default:
+    alert('The result is strange. Really.');
+}
+*//*
+let arg = prompt("Enter a value?");
+switch (arg) {
+  case '0':
+  case '1':
+    alert( 'One or zero' );
+    break;
+
+  case '2':
+    alert( 'Two' );
+    break;
+
+  case 3:
+    alert( 'Never executes!' );
+    break;
+  default:
+    alert( 'An unknown value' );
+}
+
+
+let a = +prompt('a?', '');
+
+switch(a){
+  case 0:
+    alert(0);
+  break;
+
+  case 1:
+    alert(1);
+  break;
+
+  case 2:
+  case 3:
+  alert('2,3');
+
+}
+
+let userName = 'John'     //GV
+
+function showMessage(){
+    userName = "Bob";     //LV
+
+    let message = 'Hello, ' + userName;
+    alert(message);
+}
+
+*/
+let sum=(a,b) => a+b;
+
+//or
+
+let sum = function(a,b){
+  return a+b;
+};
+alert(sum(1,2));
+
+
+let sayHi = () => alert("Hello");
+
+sayHi();
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
